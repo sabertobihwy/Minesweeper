@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px auto;
+    font-family: 'Press Start 2P', 'VT323', monospace;
+    /* 像素风格字体 */
+}
+
+h1 {
+    text-align: center;
+}
+
+.level {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.level button {
+    margin: 5px 10px;
+    padding: 7px 15px;
+    background-color: #A2A9D0;
+    outline: none;
+    border: 1.5px solid;
+    color: white;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 16px;
+    /* 设置适合的字号 */
+}
