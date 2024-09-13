@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Minesweeper</h1>
+        <h1>
+            <img src="img/piggy.png">
+            Minesweeper
+        </h1>
         <div class="level">
-            <button class="active">Low</button>
-            <button>Medium</button>
-            <button>High</button>
+            <button id="easy" class="active">Easy</button>
+            <button id="normal">Normal</button>
+            <button id="hard">Hard</button>
         </div>
         <div class="info">
             Total bombs: <span id="bombs">10</span>
@@ -22,9 +26,11 @@
         <div class="info">
             Flags: <span id="flags">0</span>
         </div>
-        <div class="court"></div>
+        <div class="mainArea"></div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -7,11 +7,23 @@
 .container {
     margin: 50px auto;
     font-family: 'Press Start 2P', 'VT323', monospace;
-    /* 像素风格字体 */
+    border: 1px solid transparent;
+}
+
+.container img {
+    position: absolute;
+    height: 100px;
+    top: -80px;
+    left: 25%;
+    z-index: 1;
 }
 
 h1 {
+    /* border: 1px solid black; */
+    margin: 50px 0 0 0;
     text-align: center;
+    position: relative;
+    z-index: 9;
 }
 
 .level {
@@ -22,16 +34,48 @@ h1 {
 .level button {
     margin: 5px 10px;
     padding: 7px 15px;
-    background-color: #A2A9D0;
+    background-color: #6B7AA1;
+    font-family: 'Press Start 2P';
     outline: none;
-    border: 1.5px solid;
+    border: 1px solid grey;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.level button.active {
+    background-color: #167ccfd5;
 }
 
 .info {
     text-align: center;
     margin: 5px auto;
-    font-size: 16px;
-    /* 设置适合的字号 */
 }
+
+table {
+    background: #929196;
+    margin: 20px auto;
+    border-collapse: separate;
+    /* 使用分离边框模型 */
+    border-spacing: 0;
+    /* 确保单元格之间没有额外的间距 */
+}
+
+table tr>td {
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff;
+}
+
+.bomb {
+    width: 24px;
+    height: 24px;
+    background: url('../img/bomb.png') center / contain no-repeat;
+    opacity: 0.5;
+}
+
+/* .canFlag{
+
+} */
